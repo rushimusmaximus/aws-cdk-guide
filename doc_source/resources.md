@@ -121,7 +121,7 @@ Many AWS CDK classes require properties that are AWS CDK resource objects \(reso
 + By passing the resource directly
 + By passing the resource's unique identifier, which is typically an ARN, but it could also be an ID or a name
 
-For example, an Amazon ECS service requires a reference to the cluster on which it runs; an Amazon CloudFront distribution requires a reference to the bucket containing source code\.
+For example, an Amazon ECS service requires a reference to the cluster on which it runs; an Amazon CloudFront distribution requires a reference to the bucket containing source content\.
 
 If a construct property represents another AWS construct, its type is that of the interface type of that construct\. For example, the Amazon ECS service takes a property `cluster` of type `ecs.ICluster`; the CloudFront distribution takes a property `sourceBucket` \(Python: `source_bucket`\) of type `s3.IBucket`\.
 
